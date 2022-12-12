@@ -1,0 +1,13 @@
+
+<app-convert-select
+(fromEmitter)="fromSubscriber($event)"
+(toEmitter)="toSubscriber($event)"
+></app-convert-select>
+<!-- <app-convert-input></app-convert-input> -->
+<div class="main form-group m-auto col-lg-9">
+<input class="form-control m-auto mt-2 "
+[(ngModel)] = "amount"
+type="text" placeholder="Enter amount">
+<button class="btn btn-primary m-auto mt-2 d-block col-lg-12" (click)="convert()">Enter</button>
+<h1>{{calculatee}}</h1>
+</div>

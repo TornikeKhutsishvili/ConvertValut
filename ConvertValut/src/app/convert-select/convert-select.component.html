@@ -1,0 +1,21 @@
+
+<div class="mainSelect form-group col-lg-9 m-auto">
+  <select class="form-select mt-2"
+   [(ngModel)]="from"
+   (change)="chooseCurrency()">
+    <option value="">Convert from</option>
+    <option
+     *ngFor="let i of arr"
+     value={{i}}>{{i}}</option>
+  </select>
+
+  <select class="form-select mt-2"
+   [(ngModel)]="to"
+   (change)="exchangeRate()">
+    <option value="">Convert to</option>
+    <option
+    *ngFor="let i of arr"
+    value={{i}}>{{i}}</option>
+  </select>
+</div>
+
